@@ -32,6 +32,7 @@ const INITIAL_POSTS: Post[] = [
     reposted: false,
     tags: ['writing', 'craft'],
   },
+  
   {
     id: '2',
     author: 'Dev Kapoor',
