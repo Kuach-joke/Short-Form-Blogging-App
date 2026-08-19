@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => {
 
   return {
      base: '/Short-Form-Blogging-App/',
-})
+}),
     build: {
       sourcemap: emitSourcemaps ? 'inline' : false,
       minify: !emitSourcemaps,
