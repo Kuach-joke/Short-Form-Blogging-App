@@ -11,9 +11,7 @@ export default defineConfig(({ mode }) => {
   const emitSourcemaps = mode === 'development'
 
   return {
-     export default defineConfig({
-  plugins: [react()],
-  base: '/Short-Form-Blogging-App/'
+     base: '/Short-Form-Blogging-App/',
 })
     build: {
       sourcemap: emitSourcemaps ? 'inline' : false,
