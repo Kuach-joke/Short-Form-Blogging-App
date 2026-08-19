@@ -1,0 +1,10 @@
+{
+  "description": "Share concise posts with character limits and explore trending topics to stay informed and engaged in a fast-paced social blogging community.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
