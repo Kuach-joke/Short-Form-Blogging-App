@@ -11,7 +11,9 @@ export default defineConfig(({ mode }) => {
   const emitSourcemaps = mode === "development"
 
   return {
-    base: "/Short-Form-Blogging-App/",
+    base: process.env.GITHUB_ACTIONS
+  ? "/Short-Form-Blogging-App/"
+  : "/",
     build: {
       sourcemap: emitSourcemaps ? "inline" : false,
       minify: !emitSourcemaps,
