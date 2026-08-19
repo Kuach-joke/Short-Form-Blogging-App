@@ -11,11 +11,10 @@ export default defineConfig(({ mode }) => {
   const emitSourcemaps = mode === 'development'
 
   return {
-    base: process.env.GITHUB_ACTIONS
-  ? '/Short-Form-Blogging-App/'
-  : process.env.FIGMA_PUBLIC_URL
-    ? `${process.env.FIGMA_PUBLIC_URL}/`
-    : '/',
+      export default defineConfig({
+    base: '/Short-Form-Blogging-App/',
+    // ...
+  })
     build: {
       sourcemap: emitSourcemaps ? 'inline' : false,
       minify: !emitSourcemaps,
