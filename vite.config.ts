@@ -11,10 +11,10 @@ export default defineConfig(({ mode }) => {
   const emitSourcemaps = mode === 'development'
 
   return {
-      export default defineConfig({
-    base: '/Short-Form-Blogging-App/',
-    // ...
-  })
+     export default defineConfig({
+  plugins: [react()],
+  base: '/Short-Form-Blogging-App/'
+})
     build: {
       sourcemap: emitSourcemaps ? 'inline' : false,
       minify: !emitSourcemaps,
